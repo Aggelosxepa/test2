@@ -1,0 +1,159 @@
+.about-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 1800px;
+  height: 1050px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  text-align: center;
+
+}
+
+.about-card-flex{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 100px;
+  min-width: 30%;
+}
+
+.dark-mode .about-card{
+  background-color: hsl(220, 4%, 15%);
+  border: 1px solid hsl(220, 4%, 15%);
+  color: hsl(0, 0%, 100%);
+}
+
+.overview-container {
+  text-align: center;
+  display: block;
+  margin: 20px auto;
+  width: 100%; 
+}
+
+p{
+  font-size: 16px;
+  white-space: normal;
+  letter-spacing: normal;
+  word-wrap: break-word;
+  text-align: justify;
+  max-width: 1550px;
+}
+
+.left_column{
+  width: 550px;
+  float:left;
+  margin-top: 80px;
+  margin-left : 195px;
+ 
+}
+
+.right_column{
+  margin-top: 80px;
+  width: 550px;
+  float:right;
+  margin-right : 195px;
+}
+
+.center_column {
+  float: left;
+  width: 550px;
+  margin: 0 auto; 
+  margin-top: 350px; 
+}
+
+.about-header {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.about-header h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+  white-space: normal;
+  letter-spacing: normal;
+  word-wrap: break-word;
+}
+
+.line {
+  width: 15px;
+  height: 0;
+  border: 1px solid hsl(226, 44%, 80%);
+  margin: 20px auto;
+}
+
+ul {
+  list-style: none;
+ 
+}
+
+.list-style ::before {
+  content: "\2022";
+  color: hsl(226, 44%, 80%);
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.info-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  
+}
+
+.list-font{
+  font-size: 16px;
+}
+
+.info-list li {
+  margin-bottom: 15px;
+}
+
+.about-header::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #b4bfe2, transparent);
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  opacity: 0.7;
+}
+
+.about-header p {
+  font-size: 14px;
+  margin: 0;
+}
+
+@media (max-width: 1549px) {
+  .about-card {
+    max-width: 350px;
+    height: auto; 
+    
+  }
+
+  .about-card-flex {
+    flex-direction: column; 
+  }
+
+  .left_column,
+  .right_column {
+    max-width: 350px; 
+    float: none; 
+    margin: 0 auto; 
+    margin-top: 20px; 
+    text-align: justify;
+  }
+
+  .info-list {
+    text-align: center; 
+  }
+}

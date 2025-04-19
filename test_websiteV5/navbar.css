@@ -1,0 +1,239 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  height: 60px;
+  overflow: hidden;
+  background-color: #ffffff;
+  z-index: 999;
+  padding: 0 20px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.dark-mode-btn {
+  display: flex;
+  margin-left: auto;
+}
+
+.cycle-button {
+  min-width: 20px;
+  min-height: 20px;
+  border: 0;
+  border: 2px solid black;
+  border-radius: 50%;
+  background: linear-gradient(135deg,  white 50%, black 50%);
+  cursor: pointer;
+  position: relative;
+}
+
+.dark-mode {
+  background-color: hsl(220, 4%, 15%);
+  color: hsl(0, 0%, 100%);
+}
+
+.dark-mode .navbar {
+  background-color: hsl(220, 4%, 15%);
+  color: hsl(0, 0%, 100%);
+}
+.dark-mode .navbar a {
+
+  background-color: hsl(220, 4%, 15%);
+  color: white; 
+}
+
+.dark-mode .cycle-button {
+  border: 2px solid rgb(255, 255, 255);
+}
+.dark-mode .menu-toggle .bar{
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 100%); 
+}
+.dark-mode .mobile-nav{
+  background-color: hsl(220, 4%, 15%);
+}
+
+/* .navbar img {
+  height: 50px;
+  width: auto;
+} */
+.navbar img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 50px;
+  width: 50px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.nav-item a {
+  color: #000000;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease-out;
+}
+
+.nav-item a:hover {
+  color: #b4bfe2;
+}
+
+/* MOBILE MENU & ANIMATION */
+.menu-toggle .bar{
+  width: 25px;
+  height: 3px;
+  background-color: #000000;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-toggle {
+  margin-left: auto; 
+  margin-right: 8px;
+  display: none;
+}
+
+.menu-toggle:hover{
+  cursor: pointer;
+}
+
+#mobile-menu.is-active .bar:nth-child(2){
+  opacity: 0;
+}
+
+#mobile-menu.is-active .bar:nth-child(1){
+  -webkit-transform: translateY(8px) rotate(45deg);
+  -ms-transform: translateY(8px) rotate(45deg);
+  -o-transform: translateY(8px) rotate(45deg);
+  transform: translateY(8px) rotate(45deg);
+}
+
+#mobile-menu.is-active .bar:nth-child(3){
+  -webkit-transform: translateY(-8px) rotate(-45deg);
+  -ms-transform: translateY(-8px) rotate(-45deg);
+  -o-transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* KEYFRAME ANIMATIONS */
+@-webkit-keyframes gradbar {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes gradbar {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes gradbar {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+/* Media Queries */
+/* Mobile Devices - Phones/Tablets */
+@media only screen and (max-width: 833px) { 
+  
+  .features {
+    flex-direction: column;
+    padding: 50px;
+  }
+  
+  h1 {
+    font-size: 1.9rem;
+  }
+  
+  h2 {
+    font-size: 1rem;
+  }
+  
+  p {
+    font-size: 0.8rem;
+  }
+ 
+  /* MOBILE NAVIGATION */
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: start;
+    top: 55px;
+    background-color: #fff;
+    width: 105%;
+    height: calc(100vh - 55px);
+    transform: translate(-105%);
+    text-align: center;
+    overflow: hidden;
+  }
+ 
+  .menu-toggle {
+   margin-left: 10px;
+    display: block;
+  }
+  .navbar li {
+    padding: 15px;
+  }
+  
+  .navbar li:first-child {
+    margin-top: 50px;
+  
+  }
+  
+  .navbar li a {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+   
+  .menu-toggle, .bar {
+    display: block;
+    cursor: pointer;
+  }
+  
+  .mobile-nav {
+    transform: translate(-5%)!important;
+  
+  }
+  
+}

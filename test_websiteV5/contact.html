@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="renderup_logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,300;1,700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="contact_box.css">
+  <link rel="stylesheet" href="main.css">
+  <title>contact - renderup</title>
+</head>
+<body>	
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="menu_toggle_btn.js"></script>
+    <script src="dark_mode.js"></script>
+    <nav class="navbar">
+      <div class="navbar-left">
+          <a href="home.html" class="logo"><img src="renderup_logo.png" alt="renderup - 3D Models / 3D Designers"></a>
+          <ul class="nav">
+              <li class="nav-item"><a href="home.html">Home</a></li>
+              <li class="nav-item"><a href="about.html">About us</a></li>
+              <li class="nav-item"><a href="contact.html">Contact</a></li>
+          </ul> 
+      </div>
+      <div class="dark-mode-btn">
+        <button class="cycle-button" id="dark-mode-toggle" onclick="toggleDarkMode()"></button>
+    </div>
+      <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </div>
+  </nav>
+  <div class="contact-card-flex">
+    <div class="contact-card">
+      <div class="contact-header">
+         <h2><b>CONTACT</b></h2>   
+      </div>
+      <div class="email">
+      <p class="fas fa-envelope"> renderupcontact@gmail.com</p>
+    </div>
+    </div>
+  </div>
+  <script>
+    function copyText(element) {
+       const text = element.querySelector('b').innerText;
+       navigator.clipboard.writeText(text).then(function() {
+         const tooltipId = element.getElementsByClassName('tooltiptext')[0].id;
+         const tooltip = document.getElementById(tooltipId);
+         tooltip.innerHTML = 'Copied!';
+         setTimeout(function() {
+           tooltip.innerHTML = 'Copy';
+         }, 1000);
+       }, function(err) {
+         console.error('Failed to copy text: ', err);
+       });
+     }
+     function resetTooltip(element) {
+       const tooltipId = element.getElementsByClassName('tooltiptext')[0].id;
+       const tooltip = document.getElementById(tooltipId);
+       tooltip.innerHTML = 'Copy';
+     }
+ </script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="renderup_logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,300;1,700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="product_page_rims.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="lightbox.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="lightbox-plus-jquery.min.js"></script>
+  <title>Rims Collection 3D Model - renderup</title>
+</head>
+<body>
+  <script src="menu_toggle_btn.js"></script>
+  <script src="dark_mode.js"></script>
+  <nav class="navbar">
+  <div class="navbar-left">
+      <a href="home.html" class="logo"><img src="renderup_logo.png" alt="renderup - 3D Models / 3D Designers"></a>
+      <ul class="nav">
+          <li class="nav-item"><a href="home.html">Home</a></li>
+          <li class="nav-item"><a href="about.html">About us</a></li>
+          <li class="nav-item"><a href="contact.html">Contact</a></li>
+      </ul> 
+  </div>
+  <div class="dark-mode-btn">
+    <button class="cycle-button" id="dark-mode-toggle" onclick="toggleDarkMode()"></button>
+</div>
+  <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+  </div>
+</nav>
+  <div class="product-box">
+    <div class="container">
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <a href="rims_1.jpg" data-lightbox="rims-collection">
+        <img src="rims_1.jpg" alt="Rims Collection 3D Models" style="width:100%; height:100%;">
+      </a>
+      </div>
+      <div class="mySlides fade">
+        <a href="rims_2.jpg" data-lightbox="rims-collection">
+        <img src="rims_2.jpg" alt="Rims Collection 3D Models" style="width:100%; height:100%;">
+      </a>
+      </div>
+      <div class="mySlides fade">
+        <a href="rims_3.jpg" data-lightbox="rims-collection">
+          <img src="rims_3.jpg" alt="Rims Collection 3D Model" style="width:100%; height:100%;">
+        </a>
+      </div>
+      <div class="mySlides fade">
+        <a href="rims_4.png" data-lightbox="rims-collection">
+        <img src="rims_4.png" alt="Rims Collection 3D Models" style="width:100%; height:100%;">
+      </a>
+      </div>
+      <div class="mySlides fade">
+        <a href="rims_5.jpg" data-lightbox="rims-collection">
+        <img src="rims_5.jpg" alt="Rims Collection 3D Models" style="width:100%; height:100%;">
+      </a>
+      </div>
+      <div class="mySlides fade">
+        <a href="rims_6.jpg" data-lightbox="rims-collection">
+        <img src="rims_6.jpg" alt="Rims Collection 3D Models" style="width:100%; height:100%;">
+      </a>
+      </div>
+      <div class="mySlides fade">
+        <a href="rims_7.jpg" data-lightbox="rims-collection">
+        <img src="rims_7.jpg" alt="Rims Collection 3D Models" style="width:100%; height:100%;">
+      </a>
+      </div>
+      <div class="mySlides fade">
+        <a href="rims_8.jpg" data-lightbox="rims-collection">
+        <img src="rims_8.jpg" alt="Rims Collection 3D Models" style="width:100%; height:100%;">
+      </a>
+      </div>
+      <div class="mySlides fade">
+        <a href="rims_9.jpg" data-lightbox="rims-collection">
+        <img src="rims_9.jpg" alt="Rims Collection 3D Models" style="width:100%; height:100%;">
+      </a>
+      </div>
+      <div class="mySlides fade">
+        <a href="rims_10.jpg" data-lightbox="rims-collection">
+        <img src="rims_10.jpg" alt="Rims Collection 3D Models" style="width:100%; height:100%;">
+      </a>
+      </div>
+      <div class="mySlides fade">
+        <a href="rims_11.jpg" data-lightbox="rims-collection">
+        <img src="rims_11.jpg" alt="Rims Collection 3D Models" style="width:100%; height:100%;">
+      </a>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <div class="img-container">
+    <div class="image-grid">
+      <div class="demo">
+        <img class="demo-image" src="rims_1.jpg" alt="Rims Collection 3D Models" data-index="1" onclick="currentDiv(1)">
+      </div>
+      <div class="demo">
+        <img class="demo-image" src="rims_2.jpg" alt="Rims Collection 3D Models" data-index="2" onclick="currentDiv(2)">
+      </div>
+      <div class="demo">
+        <img class="demo-image" src="rims_3.jpg" alt="Rims Collection 3D Models" data-index="3" onclick="currentDiv(3)">
+      </div>
+      <div class="demo">
+        <img class="demo-image" src="rims_4.png" alt="Rims Collection 3D Models" data-index="3" onclick="currentDiv(4)">
+      </div>
+      <div class="demo">
+        <img class="demo-image" src="rims_5.jpg" alt="Rims Collection 3D Models" data-index="3" onclick="currentDiv(5)">
+      </div>
+      <div class="demo">
+        <img class="demo-image" src="rims_6.jpg" alt="Rims Collection 3D Models" data-index="3" onclick="currentDiv(6)">
+      </div>
+      <div class="demo">
+        <img class="demo-image" src="rims_7.jpg" alt="Rims Collection 3D Models" data-index="3" onclick="currentDiv(7)">
+      </div>
+      <div class="demo">
+        <img class="demo-image" src="rims_8.jpg" alt="Rims Collection 3D Models" data-index="3" onclick="currentDiv(8)">
+      </div>
+      <div class="demo">
+        <img class="demo-image" src="rims_9.jpg" alt="Rims Collection 3D Models" data-index="3" onclick="currentDiv(9)">
+      </div>
+      <div class="demo">
+        <img class="demo-image" src="rims_10.jpg" alt="Rims Collection 3D Models" data-index="3" onclick="currentDiv(10)">
+      </div>
+      <div class="demo">
+        <img class="demo-image" src="rims_11.jpg" alt="Rims Collection 3D Models" data-index="3" onclick="currentDiv(11)">
+      </div>
+    </div>
+  </div>
+  </div>
+<div class="product-description">
+  <center><h2 class="product-header">Rims Collection</h2></center>
+  <p>This pack includes 10 highly detailed 3d models , of both oem, aftermarket and generic rim designs. 
+    All of the models can be subdivided for close up shots or be left unsubdivided for reduction of memory usage. 
+    All of the rims are uv unwrapped and some rims include removable decals. 
+    The pack also includes a procedural material that can add scratches and edge wear to all the models using ambient occlusion and edge detection
+     (can be used in blender cycles) 
+     the color , saturation , amount of scratches , the intensity of the scratches and the roughness of 
+     the material can be adjusted non destructively and procedurally through the easy to use material node. </p>
+     <div class="info-list">
+      <b><p>The rims that are included in the pack are:</p></b>
+      <ul class="list-style">
+      <li class="list-font" > Stern face ii</il>
+      <li class="list-font" > Work Meister s1 3p</il>
+      <li class="list-font" > Fifteen52 Turbomac</il>
+      <li class="list-font" > Oz rally racing (2000s design)</il>
+      <li class="list-font" > BBS lm</il>
+      <li class="list-font" > Audi quattro OEM rims</il>
+      <li class="list-font" > BMW Z4 gt4 OEM rims</il>
+      <li class="list-font" > Ferrari F40 OEM rims</il>
+      <li class="list-font" > 6 spoke rims </il>
+      <li class="list-font" > 3 spoke multi piece rims</il>
+     </ul>
+     <p><b>Disclaimer:</b> some rims require at least one level of subdivision to be shaded properly 
+      The materials only work in the .blend format in the cycles render engine.</p>
+    </div>
+</div>
+<div class="featured-products-h">
+  <h2>Featured Products:</h2>
+</div>
+  <div class="product-container">
+    <div class="product-item">
+        <a class="a-link-normal" target="_top" rel="noopener" title="Furniture collection" href="#">
+            <img alt="Product 1" src="coming_soon1.jpg" alt="3D Model" class="product-image">
+            <div class="product-name">Upcoming Collection</div>
+        </a>
+        <span class="a-size-medium a-color-price">No price</span>
+    </div>
+    <div class="product-item">
+      <a class="a-link-normal" target="_blank" rel="noopener" title="Rims Collection" href="https://w3docs.com" >
+          <img alt="Product 1" src="rims_2.jpg" alt="3D Models rims" class="product-image">
+          <div class="product-name">Rims Collection</div>
+      </a>
+      <span class="a-size-medium a-color-price">20€</span>
+  </div>
+  <div class="product-item">
+    <a class="a-link-normal" target="_top" rel="noopener" title="Fern Collection" href="#">
+        <img alt="Product 1" src="coming_soon2.jpg" alt="3D Model" class="product-image">
+        <div class="product-name">Upcoming Collection</div>
+    </a>
+    <span class="a-size-medium a-color-price">No price</span>
+  </div>
+</div>
+</div>
+</div> 
+  <script src="slideshow_productpage.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="renderup_logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,300;1,700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="cards.css">
+  <link rel="stylesheet" href="lightbox.min.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <title>renderup: Your Portal to Premium 3D Models</title>
+</head>
+<body>
+<script src="menu_toggle_btn.js"></script>
+<script src="dark_mode.js"></script>
+  <nav class="navbar">
+    <div class="navbar-left">
+        <a href="home.html" class="logo"><img src="renderup_logo.png" alt="renderup - 3D Models / 3D Designers"></a>
+        <ul class="nav">
+            <li class="nav-item"><a href="home.html">Home</a></li>
+            <li class="nav-item"><a href="about.html">About us</a></li>
+            <li class="nav-item"><a href="contact.html">Contact</a></li>
+        </ul> 
+    </div>
+    <div class="dark-mode-btn">
+      <button class="cycle-button" id="dark-mode-toggle" onclick="toggleDarkMode()"></button>
+  </div>
+    <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+</nav>
+  <div class="pricing-card-flex">
+    <div class="pricing-card">
+      <div class="pricing-header">
+        <div class="tooltip">
+        <span class="tooltiptext" id="tooltipText1">Copy</span>
+         <h2 id="header1"><b>Upcoming Collection</b></h2> 
+        </div>
+      </div>
+      <div class="slideshow-container">
+        <a href="coming_soon1.jpg" data-lightbox="coming-soon1">
+          <img class="mySlides-0" src="coming_soon1.jpg" alt="3D Model" style="display: none;">
+        </a>
+        <a href="coming_soon2.jpg" data-lightbox="coming-soon1">
+          <img class="mySlides-0" src="coming_soon2.jpg" alt="3D Model" style="display: block;">
+        </a>
+        <a href="coming_soon3.jpg" data-lightbox="coming-soon1">
+          <img class="mySlides-0" src="coming_soon3.jpg" alt="3D Model" style="display: none;">
+        </a>
+        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+      </div>
+      <div class="slideshow-dots">
+        <span class="dot dot-0" onclick="currentSlide(1, 0)"></span>
+        <span class="dot dot-0" onclick="currentSlide(2, 0)"></span>
+        <span class="dot dot-0" onclick="currentSlide(3, 0)"></span>
+      </div>
+      <ul class="pricing-features">
+        <br>
+        <li>file formats:</li>
+        <li>obj</li>
+        <li>blend</li>
+        <li>fbx</li>
+      </ul>
+      <div class="button-container">
+        <div class="button-group">
+          <button onclick="" class="buy-button">sketchfab No price</button>
+          <button onclick="" class="buy-button">cgtrader No price</button>
+      </div>
+      <button  class="buy-button">more info</button>
+      </div>
+    </div>
+      <div class="pricing-card">
+        <div class="pricing-header">
+          <div class="tooltip">
+          <span class="tooltiptext" id="tooltipText2">Copy</span>
+           <h2 id="header2"><b>Rims Collection</b></h2> 
+          </div>
+        </div>
+      <div class="slideshow-container">
+        <a href="rims_1.jpg" data-lightbox="rims-gallery">
+          <img class="mySlides-1" src="rims_1.jpg" alt="Rims Collection 3D Models" style="display: none;">
+        </a>
+        <a href="rims_2.jpg" data-lightbox="rims-gallery">
+          <img class="mySlides-1" src="rims_2.jpg" alt="Rims Collection 3D Models" style="display: block;">
+        </a>
+        <a href="rims_3.jpg" data-lightbox="rims-gallery">
+          <img class="mySlides-1" src="rims_3.jpg" alt="Rims Collection 3D Models" style="display: none;">
+        </a>
+        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+      </div>
+      <div class="slideshow-dots">
+        <span class="dot dot-1" onclick="currentSlide(1, 1)"></span>
+        <span class="dot dot-1" onclick="currentSlide(2, 1)"></span>
+        <span class="dot dot-1" onclick="currentSlide(3, 1)"></span>
+      </div>
+      <ul class="pricing-features">
+        <br>
+        <li>file formats:</li>
+        <li>obj</li>
+        <li>blend</li>
+        <li>fbx</li>
+      </ul>
+      <div class="button-container">
+        <div class="button-group">
+            <button onclick="window.open('https://w3docs.com')" class="buy-button">sketchfab 20€</button>
+            <button onclick="window.open('https://w3docs.com')" class="buy-button">cgtrader 25€</button>
+        </div>
+        <button onclick="window.location.href='product_page_rims.html';" class="buy-button">more info</button>
+    </div>
+    </div>
+    <div class="pricing-card">
+      <div class="pricing-header">
+        <div class="tooltip">
+        <span class="tooltiptext" id="tooltipText3">Copy</span>
+         <h2 id="header3"><b>Upcoming Collection</b></h2> 
+        </div>
+      </div>
+      <div class="slideshow-container">
+        <a href="coming_soon1.jpg" data-lightbox="coming-soon2">
+          <img class="mySlides-2" src="coming_soon1.jpg" alt="3D Model" style="display: none;">
+        </a>
+        <a href="coming_soon2.jpg" data-lightbox="coming-soon2">
+          <img class="mySlides-2" src="coming_soon2.jpg" alt="3D Model" style="display: block;">
+        </a>
+        <a href="coming_soon3.jpg" data-lightbox="coming-soon2">
+          <img class="mySlides-2" src="coming_soon3.jpg" alt="3D Model" style="display: none;">
+        </a>
+        <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+      </div>
+      <div class="slideshow-dots">
+        <span class="dot dot-2" onclick="currentSlide(1, 2)"></span>
+        <span class="dot dot-2" onclick="currentSlide(2, 2)"></span>
+        <span class="dot dot-2" onclick="currentSlide(3, 2)"></span>
+      </div>
+      <ul class="pricing-features">
+        <br>
+        <li>file formats:</li>
+        <li>obj</li>
+        <li>blend</li>
+        <li>fbx</li>
+      </ul>
+      <div class="button-container">
+        <div class="button-group">
+          <button onclick="" class="buy-button">sketchfab No price</button>
+          <button onclick="" class="buy-button">cgtrader No price</button>
+      </div>
+      <button class="buy-button">more info</button>
+      </div>
+    </div>
+  </div>
+    <script src="copy_header.js"></script> 
+    <script src="lightbox-plus-jquery.min.js"></script>
+    <script src="slideshow_homepage.js"></script>
+</body>
+</html>

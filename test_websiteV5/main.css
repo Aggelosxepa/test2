@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: hsl(226, 44%, 80%);
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    ::selection {
+      background-color: hsl(226, 44%, 80%);
+      color: black;
+    }
+  }
